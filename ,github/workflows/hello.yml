@@ -5,11 +5,10 @@ name: Hello
 on:
   workflow_dispatch:
 
-# jobs is an object needs Indentation
-jobs:                             
+jobs:
   say-hello:
-  runs-on: ubuntu-latest
-     steps:                               
+    runs-on: ubuntu-latest
+    steps:
       - name: Say hello to everyone
         run: echo "Hello Brother"
 
