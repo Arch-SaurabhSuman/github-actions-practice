@@ -6,12 +6,10 @@ on:
   workflow_dispatch:
 
 # jobs is an object needs Indentation
-jobs:                                     
+jobs:                             
   say-hello:
-    # create Ephermal Container With Ubuntu Running                             
-    runs-on: ubuntu-latest
-     # steps inside the jobs
-    steps:                               
+  runs-on: ubuntu-latest
+     steps:                               
       - name: Say hello to everyone
         run: echo "Hello Brother"
 
