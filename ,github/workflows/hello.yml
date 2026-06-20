@@ -1,0 +1,17 @@
+# Workflow
+# Should Have Name
+name: Hello
+
+on:
+  workflow_dispatch:
+
+
+jobs:                                     # jobs is an object needs Indentation
+  say-hello:
+                                          # create Ephermal Container With Ubuntu Running
+    runs-on: ubuntu-latest
+    steps:                                # steps inside the jobs
+      - name: Say hello to everyone
+        run: echo "Hello Brother"
+
+
